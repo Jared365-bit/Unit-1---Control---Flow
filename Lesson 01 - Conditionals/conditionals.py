@@ -18,12 +18,18 @@ else:
 # ========================================
 # SECTION 2: AGE CATEGORY CLASSIFIER
 # ========================================
-age_input = input("Enter your age:") 
-if age_input: 
-    age = int(age_input) 
-if 0 <= age <= 12: 
-    print("You are a child") 
-elif 13 <= age <= 19: 
+age_verification = int(input("Enter your age: "))
+if 0 <= age_verification <=12:
+    print("You are a child")
+elif 13 <= age_verification <= 19:
+    print("you are a teenager")
+elif 20 <= age_verification <= 64:
+    print("you are an adult")
+elif age_verification >= 65:
+    print("you are a senior citizen")
+else:
+    print("Enter a valid age")
+
 
 # ========================================
 # SECTION 3: STUDENT STATUS CHECKER
