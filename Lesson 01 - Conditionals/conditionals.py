@@ -23,7 +23,7 @@ if age_input:
     age = int(age_input) 
 if 0 <= age <= 12: 
     print("You are a child") 
-elif 13 <= age <=
+elif 13 <= age <= 19: 
 
 # ========================================
 # SECTION 3: STUDENT STATUS CHECKER
