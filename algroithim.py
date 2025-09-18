@@ -13,11 +13,77 @@
 # else: 
 #     print("You cannot vote!") 
 
-fav_number = int(input("What is your favorite number (Please enter a non-decimal interger): ")) 
+# fav_number = int(input("What is your favorite number (Please enter a non-decimal interger): ")) 
 
-if fav_number % 2 == 0: 
+# if fav_number % 2 == 0: 
+#     print("Your number is even") 
+# else: 
+#     print("You number is odd") 
+
+
+
+#-----Steps for Brushing Teeth------- 
+print("Step 1: Get toothbrush")
+print("Step 2: Get toothpaste")
+print("Step 3: Put toothpaste on toothbrush")
+print("Step 4: put toothbrush on teeth")
+print("Step 5: Brush teeth with toothbrush for 2 minutes with circular motions") 
+print("Step 6: spit excess toothpaste and wash mouth") 
+
+#-----------Favorite color---------- 
+color = input("what is your favorite color: ") 
+
+print(f"Wow, I like {color} too!") 
+
+
+#-----------Positive, negative, or zero--------- 
+
+number = int(input("Pick a number: ")) 
+
+if number > 0: 
+    print("Your number is positive!") 
+elif number == 0:  
+    print("Your number is zero!") 
+else: 
+    print("Your number is negative") 
+    
+    
+    #-----------Simple loop-------- 
+name = "Jared Vasquez"
+for _ in range(3):
+    print(name)
+    
+    
+    
+    
+#-------------Even or Odd---------- 
+user_number = int(input("Pick a number: ")) 
+
+if user_number % 2 == 0: 
     print("Your number is even") 
 else: 
-    print("You number is odd") 
+    print("Your number is odd") 
+    
+    
+    #---------Multiplication Table Generator------ 
+    
+number = int(input("Enter a number: "))
 
+
+for i in range(1, 11):
+    print(f"{number} × {i} = {number * i}")
+    
+    
+
+#-------------Movie Ticket Price:----------- 
+age = int(input("What is your age: ")) 
+
+if age < 13: 
+    print("Child ticket: $8") 
+elif 13 <= age <= 59: 
+    print("Adult ticket: $12") 
+elif 60 <= age: 
+    print("Senior ticket: $6") 
+    
+    
     
