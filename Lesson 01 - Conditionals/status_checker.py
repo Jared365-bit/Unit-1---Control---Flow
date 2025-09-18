@@ -26,12 +26,18 @@ if 16 <= age <= 100:
 
 # TODO: Check enrollment eligibility (age >= 18 AND gpa >= 2.0)
 if 18 <= age and gpa >= 2.0: 
-    print("Eligible for enrollment")
-
+    print("✅ Eligible for enrollment")
+else: 
+    print("❌ Not eligible for enrollment ")
 # TODO: Check voting eligibility (age >= 18)
-if age <= 18: 
-    print("Eligible for voting")
-
+if age >= 18: 
+    print("✅ Eligible for voting")
+else: 
+    print("❌ Not eligible for voting")
 # TODO: Check honor roll status (gpa >= 3.5) 
 if gpa >= 3.5: 
-    print("You have honor roll!") 
+    print("🏆 You have honor roll!")  
+else: 
+    print("📚 You do not have honor roll")
+    
+    
