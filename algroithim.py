@@ -115,11 +115,24 @@
     
 #--------------------Password Practice Challenge-------------- 
 
-input = input("Enter password: ") 
+# input = input("Enter password: ") 
 
-password = "BCTS2025" 
+# password = "BCTS2025" 
 
-if input == password: 
-    print("Welcome!") 
+# if input == password: 
+#     print("Welcome!") 
+# else: 
+#     print("Try again.")
+
+
+#---------------Money for Snacks---------------- 
+
+money= float(input("Enter how much money you have: "))  
+change = money -2
+
+if money < 2: 
+    print("Not enough money") 
+elif money == 2: 
+    print("Dispense snack") 
 else: 
-    print("Try again.")
+    print(f"Dispense snack + return {change}")
