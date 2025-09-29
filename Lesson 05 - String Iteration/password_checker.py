@@ -75,6 +75,7 @@ else:
 print("SECURITY ISSUES") 
 three_in_row = False 
 sequence = False
+
 for i in range(len(password) - 2): 
     if password[i] == password[i+1] == password[i+2]: 
         three_in_row = True 
@@ -85,12 +86,13 @@ for i in range(len(password) - 2):
     if ord(password[i+1]) == ord(password[i]) + 1 and ord(password[i+2]) == ord(password[i]) + 2: 
         sequence = True 
         print(f"Found sequence: {password[i:i+3]}")
-        
+
 
 if three_in_row == True: 
     print("⚠️  Repeated characters (3+)") 
 else: 
     print("✔️ No repeated characters (3+)")
+
 if sequence == True: 
     print(f"⚠️  Contains sequence  {password[i:i+3]} ") 
 else: 
@@ -99,7 +101,7 @@ else:
 
 if has_digit == True and has_lower == True and has_upper == True and has_special == True and not three_in_row == True and not sequence == True and len(password) >= 8: 
     print("FINAL RATING: STRONG")
-elif not has_digit == True or not has_lower == True or not has_upper == True or not has_special == True or not three_in_row == True or not sequence == True or len(password) < 8:
+elif not has_digit == True or not has_lower == True or not has_upper == True or not has_special == True or  not three_in_row == True or  not sequence == True or len(password) < 8:
     print("FINAL RATING: MEDIUM") 
     if not has_upper == True: 
         print("- All requirements met but is missing uppercase letters") 
