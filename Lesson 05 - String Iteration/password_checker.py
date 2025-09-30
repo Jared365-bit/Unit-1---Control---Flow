@@ -93,7 +93,7 @@ if three_in_row == True:
 else: 
     print("✔️ No repeated characters (3+)")
 
-if sequence == True: 
+if ord(password[i+1]) == ord(password[i]) + 1 and ord(password[i+2]) == ord(password[i]) + 2:
     print(f"⚠️  Contains sequence  {password[i:i+3]} ") 
 else: 
     print(f"✔️ Does not contain sequence") 
@@ -125,7 +125,7 @@ elif not has_digit == True or not has_lower == True or not has_upper == True or 
         print("- All requirements met but is less than 8 characters") 
         sys.exit()
 else: 
-    print("FINAL RATING: WEAK")
+    print("FINAL RATING: WEAK") 
     if not has_upper == True: 
         print("- All requirements met but is missing uppercase letters") 
     if not has_lower == True: 
